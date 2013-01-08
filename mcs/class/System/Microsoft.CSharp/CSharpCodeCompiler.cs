@@ -172,7 +172,7 @@ namespace Mono.CSharp
 				mcs.StartInfo.Arguments = "\"" + windowsMcsPath + "\" " +
 					BuildArgs (options, fileNames, ProviderOptions);
 			} else {
-				mcs.StartInfo.FileName="mcs";
+				mcs.StartInfo.FileName="/usr/local/bin/mcs";
 				mcs.StartInfo.Arguments=BuildArgs(options, fileNames, ProviderOptions);
 			}
 
